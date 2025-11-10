@@ -42,3 +42,9 @@ Também contempla **transferências entre contas**, **consultas de extratos**, *
 **RNF09.** O sistema deve ser **compatível com os principais navegadores modernos** (Chrome, Edge, Firefox).  
 **RNF10.** Deve estar preparado para **suportar múltiplos usuários simultâneos** sem degradação perceptível de desempenho.  
 
+## 🧱 Diagrama de Classe
+
+<p align="center">
+  <img src="diagrama_classe_monefy.png" width="700" alt="Diagrama de Classe do Sistema Monefy" />
+</p>
+
