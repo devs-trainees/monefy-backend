@@ -45,6 +45,6 @@ Também contempla **transferências entre contas**, **consultas de extratos**, *
 ## 🧱 Diagrama de Classe
 
 <p align="center">
-  <img src="diagrama_classe_monefy.png" width="700" alt="Diagrama de Classe do Sistema Monefy" />
+  <img src="./diagrama_classe_monefy.png" width="700" alt="Diagrama de Classe do Sistema Monefy" />
 </p>
 
