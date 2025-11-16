@@ -48,3 +48,10 @@ Também contempla **transferências entre contas**, **consultas de extratos**, *
   <img src="./diagrama_classe_monefy.png" width="700" alt="Diagrama de Classe do Sistema Monefy" />
 </p>
 
+
+## 📌 Casos de Uso
+
+<p align="center">
+  <img src="GymSys-Page-14.png" width="700" alt="Casos de Uso do Sistema Monefy" />
+</p>
+
