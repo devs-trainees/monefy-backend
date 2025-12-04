@@ -69,4 +69,32 @@ O sistema também oferece suporte a **transferências entre contas**, fechamento
 ## 📌 Diagrama de Casos de Uso
 <img src="./Casos de Uso.png" alt="Casos de Uso">
 
+## 🔄 Diagramas de Sequência
+
+A seguir estão os principais diagramas de sequência do sistema, representando o fluxo de mensagens entre usuário, interface e camadas de controle/modelo.
+
+---
+
+### 📘 Diagrama de Sequência — Consultar Histórico de Pagamentos
+<img src="./Diagrama de Sequencia - Consultar Historico de Pagamentos.jpeg" alt="Sequência - Consultar Histórico de Pagamentos">
+
+---
+
+### 📘 Diagrama de Sequência — Realizar Transferência
+<img src="./Diagrama de Sequencia - Realizar Transferencia.jpeg" alt="Sequência - Realizar Transferência">
+
+---
+
+### 📘 Diagrama de Sequência — Visualizar Conta
+<img src="./Diagrama de Sequencia - Visualizar Conta.jpeg" alt="Sequência - Visualizar Conta">
+
+---
+
+### 📘 Diagrama de Sequência — Realizar Login
+<img src="./Diagrama de Sequencia - Realizar Login.jpeg" alt="Sequência - Realizar Login">
+
+---
+
+### 📘 Diagrama de Sequência — Criar Conta
+<img src="./Diagrama de Sequencia - Criar Conta.jpeg" alt="Sequência - Criar Conta">
 
