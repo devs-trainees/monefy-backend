@@ -66,4 +66,7 @@ O sistema também oferece suporte a **transferências entre contas**, fechamento
 ## 🧱 Diagrama de Classes
 <img src="./Diagrama de Classe.png" alt="Diagrama de Classe">
 
+## 📌 Diagrama de Casos de Uso
+<img src="./Casos de Uso.png" alt="Casos de Uso">
+
 
