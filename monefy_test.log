@@ -805,3 +805,1423 @@
     where
         u1_0.id_usuario=?
 2025-12-04T19:52:34.550-03:00  WARN 11952 --- [monefyteste] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m39s842ms718µs).
+2026-02-24T20:05:59.737-03:00  INFO 18755 --- [monefyteste] [restartedMain] com.monefy.MonefytesteApplication        : Starting MonefytesteApplication using Java 17.0.16 with PID 18755 (/Users/lucas/Documents/Programacao/monefy-backend/build/classes/java/main started by lucas in /Users/lucas/Documents/Programacao/monefy-backend)
+2026-02-24T20:05:59.738-03:00  INFO 18755 --- [monefyteste] [restartedMain] com.monefy.MonefytesteApplication        : The following 1 profile is active: "test"
+2026-02-24T20:05:59.754-03:00  INFO 18755 --- [monefyteste] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-24T20:05:59.754-03:00  INFO 18755 --- [monefyteste] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-24T20:06:00.036-03:00  INFO 18755 --- [monefyteste] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-24T20:06:00.071-03:00  INFO 18755 --- [monefyteste] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 11 JPA repository interfaces.
+2026-02-24T20:06:00.373-03:00  INFO 18755 --- [monefyteste] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-24T20:06:00.378-03:00  INFO 18755 --- [monefyteste] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-24T20:06:00.378-03:00  INFO 18755 --- [monefyteste] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-02-24T20:06:00.390-03:00  INFO 18755 --- [monefyteste] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-24T20:06:00.391-03:00  INFO 18755 --- [monefyteste] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 637 ms
+2026-02-24T20:06:00.439-03:00  INFO 18755 --- [monefyteste] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-24T20:06:00.515-03:00  INFO 18755 --- [monefyteste] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:cursodb user=SA
+2026-02-24T20:06:00.516-03:00  INFO 18755 --- [monefyteste] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-24T20:06:00.531-03:00  INFO 18755 --- [monefyteste] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-24T20:06:00.553-03:00  INFO 18755 --- [monefyteste] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2026-02-24T20:06:00.565-03:00  INFO 18755 --- [monefyteste] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-24T20:06:00.589-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@488cf30a
+2026-02-24T20:06:00.589-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@488cf30a
+2026-02-24T20:06:00.589-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@488cf30a
+2026-02-24T20:06:00.589-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@3b4f943d
+2026-02-24T20:06:00.589-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@3b4f943d
+2026-02-24T20:06:00.589-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.BasicTypeReference@6326792c
+2026-02-24T20:06:00.589-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@6326792c
+2026-02-24T20:06:00.589-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@48dd59c2
+2026-02-24T20:06:00.589-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@48dd59c2
+2026-02-24T20:06:00.589-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@67e6e770
+2026-02-24T20:06:00.589-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@67e6e770
+2026-02-24T20:06:00.589-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@67e6e770
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BasicTypeReference@20cf79cd
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@20cf79cd
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BasicTypeReference@20cf79cd
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@24c6f2b
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@24c6f2b
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.BasicTypeReference@59967fbe
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BasicTypeReference@2d4d58fe
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@2d4d58fe
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@712b88cc
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@107f94f5
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@7a7e62cb
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@7a7e62cb
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@7a7e62cb
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.BasicTypeReference@3d335fd2
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.BasicTypeReference@3d335fd2
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@3d335fd2
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@10f3dd50
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@10f3dd50
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@10f3dd50
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@7c472b87
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@7c472b87
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@7c472b87
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@752666fe
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@752666fe
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@752666fe
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@524c7a47
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@524c7a47
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@5c5b3403
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@5c5b3403
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.BasicTypeReference@1985371c
+2026-02-24T20:06:00.590-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.BasicTypeReference@1985371c
+2026-02-24T20:06:00.591-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@1985371c
+2026-02-24T20:06:00.591-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@5f52a344
+2026-02-24T20:06:00.591-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.BasicTypeReference@6efd74ab
+2026-02-24T20:06:00.591-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@6efd74ab
+2026-02-24T20:06:00.591-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.BasicTypeReference@6b83ae5b
+2026-02-24T20:06:00.591-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.BasicTypeReference@5b0e59e0
+2026-02-24T20:06:00.591-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.BasicTypeReference@5b0e59e0
+2026-02-24T20:06:00.591-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.BasicTypeReference@5b0e59e0
+2026-02-24T20:06:00.591-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@118c9946
+2026-02-24T20:06:00.591-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.BasicTypeReference@1451fff0
+2026-02-24T20:06:00.591-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.BasicTypeReference@62567a57
+2026-02-24T20:06:00.591-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.BasicTypeReference@4bbefea4
+2026-02-24T20:06:00.591-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@4bbefea4
+2026-02-24T20:06:00.591-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.BasicTypeReference@3e0d083c
+2026-02-24T20:06:00.591-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@3e0d083c
+2026-02-24T20:06:00.591-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@2538de72
+2026-02-24T20:06:00.591-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@74ed8c40
+2026-02-24T20:06:00.591-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@489a07a7
+2026-02-24T20:06:00.591-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@1e80ba60
+2026-02-24T20:06:00.591-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@7d282c8c
+2026-02-24T20:06:00.591-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@653f30e5
+2026-02-24T20:06:00.591-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.BasicTypeReference@7d80a4da
+2026-02-24T20:06:00.591-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@7d80a4da
+2026-02-24T20:06:00.591-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@664842b0
+2026-02-24T20:06:00.591-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@664842b0
+2026-02-24T20:06:00.592-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@5ab85eb9
+2026-02-24T20:06:00.592-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@5ab85eb9
+2026-02-24T20:06:00.592-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@469cf513
+2026-02-24T20:06:00.592-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@469cf513
+2026-02-24T20:06:00.592-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@3e423f6e
+2026-02-24T20:06:00.592-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@3e423f6e
+2026-02-24T20:06:00.592-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@1abbb7d4
+2026-02-24T20:06:00.592-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@26e6fac
+2026-02-24T20:06:00.592-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@237b269f
+2026-02-24T20:06:00.592-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@237b269f
+2026-02-24T20:06:00.592-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@c6dc4d1
+2026-02-24T20:06:00.592-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@4bafd79f
+2026-02-24T20:06:00.592-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@3a4dd249
+2026-02-24T20:06:00.592-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@40784441
+2026-02-24T20:06:00.592-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@40784441
+2026-02-24T20:06:00.592-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@22514bd3
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@17f77329
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.BasicTypeReference@437c2404
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@437c2404
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.BasicTypeReference@41a42a66
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@41a42a66
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@6903fe52
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@6903fe52
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@6903fe52
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.BasicTypeReference@4541b660
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@4541b660
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@4541b660
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@673ff6c8
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@7a80753
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration instant -> org.hibernate.type.BasicTypeReference@71af889a
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@71af889a
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid -> org.hibernate.type.BasicTypeReference@3995c279
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@3995c279
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@3995c279
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@2104ea35
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@6651f3d9
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.BasicTypeReference@6bb74cd1
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@6bb74cd1
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.BasicTypeReference@7c26cdd4
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Currency -> org.hibernate.type.BasicTypeReference@7c26cdd4
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@7c26cdd4
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.BasicTypeReference@7af5d527
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@7af5d527
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.BasicTypeReference@13d33e9b
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@13d33e9b
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.BasicTypeReference@42d329f4
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@42d329f4
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@8d11417
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@8d11417
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.BasicTypeReference@5cd9b4c7
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@5cd9b4c7
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration vector -> org.hibernate.type.BasicTypeReference@56746e21
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float_vector -> org.hibernate.type.BasicTypeReference@db37192
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double_vector -> org.hibernate.type.BasicTypeReference@dc2ad9f
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte_vector -> org.hibernate.type.BasicTypeReference@1cac5f6c
+2026-02-24T20:06:00.593-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.BasicTypeReference@695c3fbe
+2026-02-24T20:06:00.595-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.JavaObjectType@6b19bc99
+2026-02-24T20:06:00.596-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@6b19bc99
+2026-02-24T20:06:00.596-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration null -> org.hibernate.type.NullType@11786cbb
+2026-02-24T20:06:00.596-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@f9190ac
+2026-02-24T20:06:00.596-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@70dd04ac
+2026-02-24T20:06:00.596-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@301e048f
+2026-02-24T20:06:00.596-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@62d1ab83
+2026-02-24T20:06:00.596-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@61c65385
+2026-02-24T20:06:00.596-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@7926d375
+2026-02-24T20:06:00.596-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@39dc8aa2
+2026-02-24T20:06:00.596-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@563eb3a9
+2026-02-24T20:06:00.676-03:00  INFO 18755 --- [monefyteste] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-24T20:06:00.708-03:00  INFO 18755 --- [monefyteste] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-24T20:06:00.710-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
+2026-02-24T20:06:00.711-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
+2026-02-24T20:06:00.711-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
+2026-02-24T20:06:00.711-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2026-02-24T20:06:00.711-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(TimestampUtcDescriptor) replaced previous registration(TimestampUtcDescriptor)
+2026-02-24T20:06:00.713-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,3015)
+2026-02-24T20:06:00.713-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> basicType@1(java.time.Duration,3015)
+2026-02-24T20:06:00.713-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> basicType@1(java.time.Duration,3015)
+2026-02-24T20:06:00.714-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2cac8b14] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@3cfadc2a]
+2026-02-24T20:06:01.079-03:00  INFO 18755 --- [monefyteste] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-24T20:06:01.080-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2cac8b14] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@79832425]
+2026-02-24T20:06:01.083-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists cartao_credito cascade 
+2026-02-24T20:06:01.085-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists centro_custo cascade 
+2026-02-24T20:06:01.085-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists conta_bancaria cascade 
+2026-02-24T20:06:01.085-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists entidade cascade 
+2026-02-24T20:06:01.085-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists fatura_cartao cascade 
+2026-02-24T20:06:01.085-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists lancamento cascade 
+2026-02-24T20:06:01.085-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists movimento_conta cascade 
+2026-02-24T20:06:01.085-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists pagamento cascade 
+2026-02-24T20:06:01.085-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists recebimento cascade 
+2026-02-24T20:06:01.085-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists transferencia cascade 
+2026-02-24T20:06:01.085-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists usuario cascade 
+2026-02-24T20:06:01.085-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_cartao_credito
+2026-02-24T20:06:01.086-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_centro_custo
+2026-02-24T20:06:01.086-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_conta_bancaria
+2026-02-24T20:06:01.086-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_entidade
+2026-02-24T20:06:01.086-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_fatura_cartao
+2026-02-24T20:06:01.086-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_lancamento
+2026-02-24T20:06:01.086-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_movimento_conta
+2026-02-24T20:06:01.086-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_pagamento
+2026-02-24T20:06:01.086-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_recebimento
+2026-02-24T20:06:01.086-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_transferencia
+2026-02-24T20:06:01.086-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_usuario
+2026-02-24T20:06:01.087-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_cartao_credito start with 1 increment by 1
+2026-02-24T20:06:01.088-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_centro_custo start with 1 increment by 1
+2026-02-24T20:06:01.088-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_conta_bancaria start with 1 increment by 1
+2026-02-24T20:06:01.088-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_entidade start with 1 increment by 1
+2026-02-24T20:06:01.089-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_fatura_cartao start with 1 increment by 1
+2026-02-24T20:06:01.089-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_lancamento start with 1 increment by 1
+2026-02-24T20:06:01.089-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_movimento_conta start with 1 increment by 1
+2026-02-24T20:06:01.089-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_pagamento start with 1 increment by 1
+2026-02-24T20:06:01.089-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_recebimento start with 1 increment by 1
+2026-02-24T20:06:01.089-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_transferencia start with 1 increment by 1
+2026-02-24T20:06:01.089-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_usuario start with 1 increment by 1
+2026-02-24T20:06:01.090-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create table cartao_credito (
+        ativo boolean not null,
+        fechamento_fatura_dia integer not null,
+        status_fatura integer not null,
+        vencimento_fatura_dia integer not null,
+        id_cartao_credito bigint not null,
+        usuario_id bigint not null,
+        bandeira varchar(50) not null,
+        apelido varchar(100) not null,
+        emissor varchar(100) not null,
+        primary key (id_cartao_credito)
+    )
+2026-02-24T20:06:01.092-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create table centro_custo (
+        ativo boolean not null,
+        id_centro_custo bigint not null,
+        usuario_id bigint not null,
+        codigo varchar(30) not null,
+        nome varchar(120) not null,
+        primary key (id_centro_custo)
+    )
+2026-02-24T20:06:01.092-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create table conta_bancaria (
+        ativa boolean not null,
+        data_saldo_inicial date not null,
+        saldo_inicial numeric(17,2) not null,
+        id_conta_bancaria bigint not null,
+        usuario_id bigint not null,
+        agencia varchar(20) not null,
+        apelido varchar(20) not null,
+        numero varchar(20) not null,
+        instituicao varchar(150) not null,
+        primary key (id_conta_bancaria)
+    )
+2026-02-24T20:06:01.093-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create table entidade (
+        id_entidade bigint not null,
+        usuario_id bigint not null,
+        documento varchar(30) not null,
+        tipo varchar(50) not null,
+        nome varchar(150) not null,
+        primary key (id_entidade)
+    )
+2026-02-24T20:06:01.093-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create table fatura_cartao (
+        data_fechamento date not null,
+        data_vencimento date not null,
+        status integer not null,
+        valor_total numeric(17,2) not null,
+        cartao_id bigint not null,
+        id_fatura_cartao bigint not null,
+        competencia varchar(255),
+        primary key (id_fatura_cartao)
+    )
+2026-02-24T20:06:01.094-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create table lancamento (
+        data_competencia date not null,
+        data_vencimento date,
+        meio_pagamento integer not null,
+        status integer not null,
+        tipo integer not null,
+        valor numeric(17,2) not null,
+        valor_baixado numeric(17,2) not null,
+        cartao_id bigint,
+        centro_custo_id bigint,
+        conta_id bigint,
+        entidade_id bigint,
+        id_lancamento bigint not null,
+        usuario_id bigint not null,
+        descricao varchar(255) not null,
+        primary key (id_lancamento)
+    )
+2026-02-24T20:06:01.094-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create table movimento_conta (
+        data_movimento date not null,
+        valor numeric(17,2) not null,
+        conta_id bigint not null,
+        id_movimento_conta bigint not null,
+        referencia_id bigint,
+        referencia_tipo varchar(50),
+        historico varchar(255),
+        primary key (id_movimento_conta)
+    )
+2026-02-24T20:06:01.094-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create table pagamento (
+        data_pagamento date not null,
+        valor_pago numeric(17,2) not null,
+        conta_origem_id bigint not null,
+        id_pagamento bigint not null,
+        lancamento_id bigint not null,
+        observacao varchar(255),
+        primary key (id_pagamento)
+    )
+2026-02-24T20:06:01.095-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create table recebimento (
+        data_recebimento date not null,
+        valor_recebido numeric(17,2) not null,
+        conta_destino_id bigint not null,
+        id_recebimento bigint not null,
+        lancamento_id bigint not null,
+        observacao varchar(255),
+        primary key (id_recebimento)
+    )
+2026-02-24T20:06:01.095-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create table transferencia (
+        data date not null,
+        valor numeric(17,2) not null,
+        conta_destino_id bigint not null,
+        conta_origem_id bigint not null,
+        id_transferencia bigint not null,
+        usuario_id bigint not null,
+        observacao varchar(255),
+        primary key (id_transferencia)
+    )
+2026-02-24T20:06:01.095-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create table usuario (
+        criado_em date not null,
+        id_usuario bigint not null,
+        email varchar(20) not null unique,
+        nome varchar(65) not null,
+        primary key (id_usuario)
+    )
+2026-02-24T20:06:01.096-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists cartao_credito 
+       add constraint FKemgwy3gr8llw8cov0xefdsrfp 
+       foreign key (usuario_id) 
+       references usuario
+2026-02-24T20:06:01.101-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists centro_custo 
+       add constraint FK1u7xgds4gciw9k9t94hi91y47 
+       foreign key (usuario_id) 
+       references usuario
+2026-02-24T20:06:01.102-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists conta_bancaria 
+       add constraint FKf3gtq87s7m9umkowsud60kh0f 
+       foreign key (usuario_id) 
+       references usuario
+2026-02-24T20:06:01.103-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists entidade 
+       add constraint FKibyjdok9phiw764j7sb1gi2aw 
+       foreign key (usuario_id) 
+       references usuario
+2026-02-24T20:06:01.103-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists fatura_cartao 
+       add constraint FK1505ed7s4ol2f4941pcponjto 
+       foreign key (cartao_id) 
+       references cartao_credito
+2026-02-24T20:06:01.104-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists lancamento 
+       add constraint FKby9ddo52tb7gm1t4rsinsed8c 
+       foreign key (cartao_id) 
+       references cartao_credito
+2026-02-24T20:06:01.104-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists lancamento 
+       add constraint FKh8p2ujysi5dj401nlolvucup1 
+       foreign key (centro_custo_id) 
+       references centro_custo
+2026-02-24T20:06:01.105-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists lancamento 
+       add constraint FKj0kauc0adhu77gi2ceqik94kt 
+       foreign key (conta_id) 
+       references conta_bancaria
+2026-02-24T20:06:01.105-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists lancamento 
+       add constraint FK7eu3wdxe39ar329vqh47x3rcl 
+       foreign key (entidade_id) 
+       references entidade
+2026-02-24T20:06:01.106-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists lancamento 
+       add constraint FKpq8mu65bmp2hw9wl4kdahxajq 
+       foreign key (usuario_id) 
+       references usuario
+2026-02-24T20:06:01.106-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists movimento_conta 
+       add constraint FK76g9i9847e65n726c1s5w06rh 
+       foreign key (conta_id) 
+       references conta_bancaria
+2026-02-24T20:06:01.107-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists pagamento 
+       add constraint FK83f1jpxbpy0e5yhevfldpjr8o 
+       foreign key (conta_origem_id) 
+       references conta_bancaria
+2026-02-24T20:06:01.107-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists pagamento 
+       add constraint FKew1o9wc9kkhvtu9usvdm108cd 
+       foreign key (lancamento_id) 
+       references lancamento
+2026-02-24T20:06:01.107-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists recebimento 
+       add constraint FKeojkbjjrvxqxstc18swyc34k6 
+       foreign key (conta_destino_id) 
+       references conta_bancaria
+2026-02-24T20:06:01.108-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists recebimento 
+       add constraint FK8nknei26jdpchllx60q2lj22h 
+       foreign key (lancamento_id) 
+       references lancamento
+2026-02-24T20:06:01.109-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists transferencia 
+       add constraint FKawk75nt0wp2m4eamhxwrfuvmp 
+       foreign key (conta_destino_id) 
+       references conta_bancaria
+2026-02-24T20:06:01.109-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists transferencia 
+       add constraint FK2hmvnifd6rsllpepeglidridg 
+       foreign key (conta_origem_id) 
+       references conta_bancaria
+2026-02-24T20:06:01.109-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists transferencia 
+       add constraint FK9mou31dmvfuskscn570gqkag 
+       foreign key (usuario_id) 
+       references usuario
+2026-02-24T20:06:01.111-03:00 TRACE 18755 --- [monefyteste] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@79832425] for TypeConfiguration
+2026-02-24T20:06:01.111-03:00  INFO 18755 --- [monefyteste] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-24T20:06:01.264-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_usuario
+2026-02-24T20:06:01.277-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_conta_bancaria
+2026-02-24T20:06:01.277-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_conta_bancaria
+2026-02-24T20:06:01.277-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_cartao_credito
+2026-02-24T20:06:01.278-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_fatura_cartao
+2026-02-24T20:06:01.278-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_entidade
+2026-02-24T20:06:01.278-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_entidade
+2026-02-24T20:06:01.278-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_entidade
+2026-02-24T20:06:01.279-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_centro_custo
+2026-02-24T20:06:01.279-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_centro_custo
+2026-02-24T20:06:01.279-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_lancamento
+2026-02-24T20:06:01.279-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_lancamento
+2026-02-24T20:06:01.279-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_lancamento
+2026-02-24T20:06:01.280-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_pagamento
+2026-02-24T20:06:01.280-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_recebimento
+2026-02-24T20:06:01.280-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_transferencia
+2026-02-24T20:06:01.281-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_movimento_conta
+2026-02-24T20:06:01.281-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_movimento_conta
+2026-02-24T20:06:01.281-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_movimento_conta
+2026-02-24T20:06:01.281-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_movimento_conta
+2026-02-24T20:06:01.289-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        usuario
+        (criado_em, email, nome, id_usuario) 
+    values
+        (?, ?, ?, ?)
+2026-02-24T20:06:01.292-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        conta_bancaria
+        (agencia, apelido, ativa, data_saldo_inicial, instituicao, numero, saldo_inicial, usuario_id, id_conta_bancaria) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-02-24T20:06:01.293-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        conta_bancaria
+        (agencia, apelido, ativa, data_saldo_inicial, instituicao, numero, saldo_inicial, usuario_id, id_conta_bancaria) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-02-24T20:06:01.293-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        cartao_credito
+        (apelido, ativo, bandeira, emissor, fechamento_fatura_dia, status_fatura, usuario_id, vencimento_fatura_dia, id_cartao_credito) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-02-24T20:06:01.294-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        fatura_cartao
+        (cartao_id, competencia, data_fechamento, data_vencimento, status, valor_total, id_fatura_cartao) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-02-24T20:06:01.294-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        entidade
+        (documento, nome, tipo, usuario_id, id_entidade) 
+    values
+        (?, ?, ?, ?, ?)
+2026-02-24T20:06:01.295-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        entidade
+        (documento, nome, tipo, usuario_id, id_entidade) 
+    values
+        (?, ?, ?, ?, ?)
+2026-02-24T20:06:01.295-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        entidade
+        (documento, nome, tipo, usuario_id, id_entidade) 
+    values
+        (?, ?, ?, ?, ?)
+2026-02-24T20:06:01.295-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        centro_custo
+        (ativo, codigo, nome, usuario_id, id_centro_custo) 
+    values
+        (?, ?, ?, ?, ?)
+2026-02-24T20:06:01.295-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        centro_custo
+        (ativo, codigo, nome, usuario_id, id_centro_custo) 
+    values
+        (?, ?, ?, ?, ?)
+2026-02-24T20:06:01.296-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        lancamento
+        (cartao_id, centro_custo_id, conta_id, data_competencia, data_vencimento, descricao, entidade_id, meio_pagamento, status, tipo, usuario_id, valor, valor_baixado, id_lancamento) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-02-24T20:06:01.296-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        lancamento
+        (cartao_id, centro_custo_id, conta_id, data_competencia, data_vencimento, descricao, entidade_id, meio_pagamento, status, tipo, usuario_id, valor, valor_baixado, id_lancamento) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-02-24T20:06:01.296-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        lancamento
+        (cartao_id, centro_custo_id, conta_id, data_competencia, data_vencimento, descricao, entidade_id, meio_pagamento, status, tipo, usuario_id, valor, valor_baixado, id_lancamento) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-02-24T20:06:01.297-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        pagamento
+        (conta_origem_id, data_pagamento, lancamento_id, observacao, valor_pago, id_pagamento) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2026-02-24T20:06:01.297-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        recebimento
+        (conta_destino_id, data_recebimento, lancamento_id, observacao, valor_recebido, id_recebimento) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2026-02-24T20:06:01.297-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        transferencia
+        (conta_destino_id, conta_origem_id, data, observacao, usuario_id, valor, id_transferencia) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-02-24T20:06:01.297-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        movimento_conta
+        (conta_id, data_movimento, historico, referencia_id, referencia_tipo, valor, id_movimento_conta) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-02-24T20:06:01.298-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        movimento_conta
+        (conta_id, data_movimento, historico, referencia_id, referencia_tipo, valor, id_movimento_conta) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-02-24T20:06:01.298-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        movimento_conta
+        (conta_id, data_movimento, historico, referencia_id, referencia_tipo, valor, id_movimento_conta) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-02-24T20:06:01.298-03:00 DEBUG 18755 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        movimento_conta
+        (conta_id, data_movimento, historico, referencia_id, referencia_tipo, valor, id_movimento_conta) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-02-24T20:06:01.364-03:00  WARN 18755 --- [monefyteste] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-24T20:06:01.461-03:00  INFO 18755 --- [monefyteste] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cursodb'
+2026-02-24T20:06:01.478-03:00  INFO 18755 --- [monefyteste] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-24T20:06:01.490-03:00  INFO 18755 --- [monefyteste] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-02-24T20:06:01.494-03:00  INFO 18755 --- [monefyteste] [restartedMain] com.monefy.MonefytesteApplication        : Started MonefytesteApplication in 1.926 seconds (process running for 2.163)
+2026-02-24T20:06:15.200-03:00  INFO 18755 --- [monefyteste] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-24T20:06:15.202-03:00  INFO 18755 --- [monefyteste] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-02-24T20:06:15.204-03:00  INFO 18755 --- [monefyteste] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-24T20:06:15.204-03:00 DEBUG 18755 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists cartao_credito cascade 
+2026-02-24T20:06:15.205-03:00 DEBUG 18755 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists centro_custo cascade 
+2026-02-24T20:06:15.205-03:00 DEBUG 18755 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists conta_bancaria cascade 
+2026-02-24T20:06:15.205-03:00 DEBUG 18755 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists entidade cascade 
+2026-02-24T20:06:15.206-03:00 DEBUG 18755 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists fatura_cartao cascade 
+2026-02-24T20:06:15.206-03:00 DEBUG 18755 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists lancamento cascade 
+2026-02-24T20:06:15.206-03:00 DEBUG 18755 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists movimento_conta cascade 
+2026-02-24T20:06:15.206-03:00 DEBUG 18755 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists pagamento cascade 
+2026-02-24T20:06:15.206-03:00 DEBUG 18755 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists recebimento cascade 
+2026-02-24T20:06:15.206-03:00 DEBUG 18755 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists transferencia cascade 
+2026-02-24T20:06:15.207-03:00 DEBUG 18755 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists usuario cascade 
+2026-02-24T20:06:15.207-03:00 DEBUG 18755 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_cartao_credito
+2026-02-24T20:06:15.207-03:00 DEBUG 18755 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_centro_custo
+2026-02-24T20:06:15.207-03:00 DEBUG 18755 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_conta_bancaria
+2026-02-24T20:06:15.207-03:00 DEBUG 18755 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_entidade
+2026-02-24T20:06:15.207-03:00 DEBUG 18755 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_fatura_cartao
+2026-02-24T20:06:15.207-03:00 DEBUG 18755 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_lancamento
+2026-02-24T20:06:15.207-03:00 DEBUG 18755 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_movimento_conta
+2026-02-24T20:06:15.207-03:00 DEBUG 18755 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_pagamento
+2026-02-24T20:06:15.207-03:00 DEBUG 18755 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_recebimento
+2026-02-24T20:06:15.207-03:00 DEBUG 18755 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_transferencia
+2026-02-24T20:06:15.208-03:00 DEBUG 18755 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_usuario
+2026-02-24T20:06:15.208-03:00 TRACE 18755 --- [monefyteste] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@79832425] for TypeConfiguration
+2026-02-24T20:06:15.208-03:00 DEBUG 18755 --- [monefyteste] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@6851a029] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@79832425]
+2026-02-24T20:06:15.210-03:00  WARN 18755 --- [monefyteste] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2026-02-24T20:06:15.210-03:00  INFO 18755 --- [monefyteste] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-24T20:06:15.211-03:00  INFO 18755 --- [monefyteste] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-24T20:06:17.787-03:00  INFO 18769 --- [monefyteste] [restartedMain] com.monefy.MonefytesteApplication        : Starting MonefytesteApplication using Java 17.0.16 with PID 18769 (/Users/lucas/Documents/Programacao/monefy-backend/build/classes/java/main started by lucas in /Users/lucas/Documents/Programacao/monefy-backend)
+2026-02-24T20:06:17.787-03:00  INFO 18769 --- [monefyteste] [restartedMain] com.monefy.MonefytesteApplication        : The following 1 profile is active: "test"
+2026-02-24T20:06:17.802-03:00  INFO 18769 --- [monefyteste] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-24T20:06:17.802-03:00  INFO 18769 --- [monefyteste] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-24T20:06:17.991-03:00  INFO 18769 --- [monefyteste] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-24T20:06:18.013-03:00  INFO 18769 --- [monefyteste] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 11 JPA repository interfaces.
+2026-02-24T20:06:18.247-03:00  INFO 18769 --- [monefyteste] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-24T20:06:18.254-03:00  INFO 18769 --- [monefyteste] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-24T20:06:18.254-03:00  INFO 18769 --- [monefyteste] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-02-24T20:06:18.269-03:00  INFO 18769 --- [monefyteste] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-24T20:06:18.269-03:00  INFO 18769 --- [monefyteste] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 467 ms
+2026-02-24T20:06:18.325-03:00  INFO 18769 --- [monefyteste] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-24T20:06:18.403-03:00  INFO 18769 --- [monefyteste] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:cursodb user=SA
+2026-02-24T20:06:18.404-03:00  INFO 18769 --- [monefyteste] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-24T20:06:18.420-03:00  INFO 18769 --- [monefyteste] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-24T20:06:18.437-03:00  INFO 18769 --- [monefyteste] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2026-02-24T20:06:18.446-03:00  INFO 18769 --- [monefyteste] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-24T20:06:18.466-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@6d60cb96
+2026-02-24T20:06:18.466-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@6d60cb96
+2026-02-24T20:06:18.466-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@6d60cb96
+2026-02-24T20:06:18.466-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@56f97180
+2026-02-24T20:06:18.466-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@56f97180
+2026-02-24T20:06:18.466-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.BasicTypeReference@79a40d16
+2026-02-24T20:06:18.466-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@79a40d16
+2026-02-24T20:06:18.466-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@46ecd7c5
+2026-02-24T20:06:18.467-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@46ecd7c5
+2026-02-24T20:06:18.467-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@2dbb88f5
+2026-02-24T20:06:18.467-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@2dbb88f5
+2026-02-24T20:06:18.467-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@2dbb88f5
+2026-02-24T20:06:18.467-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BasicTypeReference@305399b3
+2026-02-24T20:06:18.467-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@305399b3
+2026-02-24T20:06:18.467-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BasicTypeReference@305399b3
+2026-02-24T20:06:18.467-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@38b98be3
+2026-02-24T20:06:18.467-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@38b98be3
+2026-02-24T20:06:18.467-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.BasicTypeReference@148b0346
+2026-02-24T20:06:18.467-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BasicTypeReference@4a63c9bb
+2026-02-24T20:06:18.467-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@4a63c9bb
+2026-02-24T20:06:18.467-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@214c4a29
+2026-02-24T20:06:18.467-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@55de3b70
+2026-02-24T20:06:18.467-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@190393be
+2026-02-24T20:06:18.467-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@190393be
+2026-02-24T20:06:18.467-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@190393be
+2026-02-24T20:06:18.468-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.BasicTypeReference@4d79af34
+2026-02-24T20:06:18.468-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.BasicTypeReference@4d79af34
+2026-02-24T20:06:18.468-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@4d79af34
+2026-02-24T20:06:18.468-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@e27b9b0
+2026-02-24T20:06:18.468-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@e27b9b0
+2026-02-24T20:06:18.468-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@e27b9b0
+2026-02-24T20:06:18.468-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@2a8606bf
+2026-02-24T20:06:18.468-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@2a8606bf
+2026-02-24T20:06:18.468-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@2a8606bf
+2026-02-24T20:06:18.468-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@2f1dee32
+2026-02-24T20:06:18.468-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@2f1dee32
+2026-02-24T20:06:18.468-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@2f1dee32
+2026-02-24T20:06:18.468-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@2f9df4ea
+2026-02-24T20:06:18.468-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@2f9df4ea
+2026-02-24T20:06:18.468-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@1c442290
+2026-02-24T20:06:18.468-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@1c442290
+2026-02-24T20:06:18.468-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.BasicTypeReference@66d6c59
+2026-02-24T20:06:18.468-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.BasicTypeReference@66d6c59
+2026-02-24T20:06:18.468-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@66d6c59
+2026-02-24T20:06:18.468-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@46416ed8
+2026-02-24T20:06:18.468-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.BasicTypeReference@6bbe85e
+2026-02-24T20:06:18.468-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@6bbe85e
+2026-02-24T20:06:18.468-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.BasicTypeReference@3bd61abb
+2026-02-24T20:06:18.468-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.BasicTypeReference@5634b63c
+2026-02-24T20:06:18.468-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.BasicTypeReference@5634b63c
+2026-02-24T20:06:18.468-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.BasicTypeReference@5634b63c
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@1bce358c
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.BasicTypeReference@42eed7b3
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.BasicTypeReference@49660e97
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.BasicTypeReference@3a90d4d1
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@3a90d4d1
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.BasicTypeReference@5098e45a
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@5098e45a
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@647ff2b5
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@1d144a1b
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@219e3334
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@36b3b969
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@2d421f50
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@1239dc71
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.BasicTypeReference@42ee5a91
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@42ee5a91
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@69bddb54
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@69bddb54
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@54b8f1ac
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@54b8f1ac
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@83e651e
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@83e651e
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@38349c5a
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@38349c5a
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@3fd49773
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@2cf234b4
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@579fb2a1
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@579fb2a1
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@4b552244
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@50a14b52
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@6d4b9266
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@47eb2fd4
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@47eb2fd4
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@254e726f
+2026-02-24T20:06:18.469-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@7f6f564f
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.BasicTypeReference@4e863366
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@4e863366
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.BasicTypeReference@508d30ed
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@508d30ed
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@606ed99
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@606ed99
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@606ed99
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.BasicTypeReference@35e1e38
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@35e1e38
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@35e1e38
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@7cbc1036
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@458f4d14
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration instant -> org.hibernate.type.BasicTypeReference@74d40a19
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@74d40a19
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid -> org.hibernate.type.BasicTypeReference@7087565
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@7087565
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@7087565
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@1ba9e812
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@2471f19e
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.BasicTypeReference@7021a3cb
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@7021a3cb
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.BasicTypeReference@34c653f7
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Currency -> org.hibernate.type.BasicTypeReference@34c653f7
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@34c653f7
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.BasicTypeReference@60fbc405
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@60fbc405
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.BasicTypeReference@4b2d2485
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@4b2d2485
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.BasicTypeReference@366ff9d0
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@366ff9d0
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@30305d01
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@30305d01
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.BasicTypeReference@ed57cee
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@ed57cee
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration vector -> org.hibernate.type.BasicTypeReference@2c7e68bd
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float_vector -> org.hibernate.type.BasicTypeReference@6516b59b
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double_vector -> org.hibernate.type.BasicTypeReference@57fc246d
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte_vector -> org.hibernate.type.BasicTypeReference@72eb0070
+2026-02-24T20:06:18.470-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.BasicTypeReference@2d0fa510
+2026-02-24T20:06:18.472-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.JavaObjectType@79d595bc
+2026-02-24T20:06:18.472-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@79d595bc
+2026-02-24T20:06:18.472-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration null -> org.hibernate.type.NullType@5fd35beb
+2026-02-24T20:06:18.472-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@4f4ee755
+2026-02-24T20:06:18.472-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@1c528e25
+2026-02-24T20:06:18.472-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@524388f
+2026-02-24T20:06:18.472-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@406d37c3
+2026-02-24T20:06:18.472-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@78a104d4
+2026-02-24T20:06:18.472-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@700a9e43
+2026-02-24T20:06:18.472-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@54ce308d
+2026-02-24T20:06:18.472-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@7d34c6f8
+2026-02-24T20:06:18.542-03:00  INFO 18769 --- [monefyteste] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-24T20:06:18.568-03:00  INFO 18769 --- [monefyteste] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-24T20:06:18.570-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
+2026-02-24T20:06:18.571-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
+2026-02-24T20:06:18.571-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
+2026-02-24T20:06:18.571-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2026-02-24T20:06:18.571-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(TimestampUtcDescriptor) replaced previous registration(TimestampUtcDescriptor)
+2026-02-24T20:06:18.573-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,3015)
+2026-02-24T20:06:18.573-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> basicType@1(java.time.Duration,3015)
+2026-02-24T20:06:18.573-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> basicType@1(java.time.Duration,3015)
+2026-02-24T20:06:18.573-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@11117ab2] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@4d0f6d3b]
+2026-02-24T20:06:18.917-03:00  INFO 18769 --- [monefyteste] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-24T20:06:18.917-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@11117ab2] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@2f41cc13]
+2026-02-24T20:06:18.920-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists cartao_credito cascade 
+2026-02-24T20:06:18.922-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists centro_custo cascade 
+2026-02-24T20:06:18.922-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists conta_bancaria cascade 
+2026-02-24T20:06:18.922-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists entidade cascade 
+2026-02-24T20:06:18.922-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists fatura_cartao cascade 
+2026-02-24T20:06:18.922-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists lancamento cascade 
+2026-02-24T20:06:18.922-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists movimento_conta cascade 
+2026-02-24T20:06:18.922-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists pagamento cascade 
+2026-02-24T20:06:18.922-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists recebimento cascade 
+2026-02-24T20:06:18.922-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists transferencia cascade 
+2026-02-24T20:06:18.922-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists usuario cascade 
+2026-02-24T20:06:18.922-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_cartao_credito
+2026-02-24T20:06:18.922-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_centro_custo
+2026-02-24T20:06:18.922-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_conta_bancaria
+2026-02-24T20:06:18.922-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_entidade
+2026-02-24T20:06:18.923-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_fatura_cartao
+2026-02-24T20:06:18.923-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_lancamento
+2026-02-24T20:06:18.923-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_movimento_conta
+2026-02-24T20:06:18.923-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_pagamento
+2026-02-24T20:06:18.923-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_recebimento
+2026-02-24T20:06:18.923-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_transferencia
+2026-02-24T20:06:18.923-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_usuario
+2026-02-24T20:06:18.924-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_cartao_credito start with 1 increment by 1
+2026-02-24T20:06:18.925-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_centro_custo start with 1 increment by 1
+2026-02-24T20:06:18.925-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_conta_bancaria start with 1 increment by 1
+2026-02-24T20:06:18.925-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_entidade start with 1 increment by 1
+2026-02-24T20:06:18.925-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_fatura_cartao start with 1 increment by 1
+2026-02-24T20:06:18.925-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_lancamento start with 1 increment by 1
+2026-02-24T20:06:18.925-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_movimento_conta start with 1 increment by 1
+2026-02-24T20:06:18.926-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_pagamento start with 1 increment by 1
+2026-02-24T20:06:18.926-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_recebimento start with 1 increment by 1
+2026-02-24T20:06:18.926-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_transferencia start with 1 increment by 1
+2026-02-24T20:06:18.926-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_usuario start with 1 increment by 1
+2026-02-24T20:06:18.927-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create table cartao_credito (
+        ativo boolean not null,
+        fechamento_fatura_dia integer not null,
+        status_fatura integer not null,
+        vencimento_fatura_dia integer not null,
+        id_cartao_credito bigint not null,
+        usuario_id bigint not null,
+        bandeira varchar(50) not null,
+        apelido varchar(100) not null,
+        emissor varchar(100) not null,
+        primary key (id_cartao_credito)
+    )
+2026-02-24T20:06:18.930-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create table centro_custo (
+        ativo boolean not null,
+        id_centro_custo bigint not null,
+        usuario_id bigint not null,
+        codigo varchar(30) not null,
+        nome varchar(120) not null,
+        primary key (id_centro_custo)
+    )
+2026-02-24T20:06:18.930-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create table conta_bancaria (
+        ativa boolean not null,
+        data_saldo_inicial date not null,
+        saldo_inicial numeric(17,2) not null,
+        id_conta_bancaria bigint not null,
+        usuario_id bigint not null,
+        agencia varchar(20) not null,
+        apelido varchar(20) not null,
+        numero varchar(20) not null,
+        instituicao varchar(150) not null,
+        primary key (id_conta_bancaria)
+    )
+2026-02-24T20:06:18.931-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create table entidade (
+        id_entidade bigint not null,
+        usuario_id bigint not null,
+        documento varchar(30) not null,
+        tipo varchar(50) not null,
+        nome varchar(150) not null,
+        primary key (id_entidade)
+    )
+2026-02-24T20:06:18.931-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create table fatura_cartao (
+        data_fechamento date not null,
+        data_vencimento date not null,
+        status integer not null,
+        valor_total numeric(17,2) not null,
+        cartao_id bigint not null,
+        id_fatura_cartao bigint not null,
+        competencia varchar(255),
+        primary key (id_fatura_cartao)
+    )
+2026-02-24T20:06:18.931-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create table lancamento (
+        data_competencia date not null,
+        data_vencimento date,
+        meio_pagamento integer not null,
+        status integer not null,
+        tipo integer not null,
+        valor numeric(17,2) not null,
+        valor_baixado numeric(17,2) not null,
+        cartao_id bigint,
+        centro_custo_id bigint,
+        conta_id bigint,
+        entidade_id bigint,
+        id_lancamento bigint not null,
+        usuario_id bigint not null,
+        descricao varchar(255) not null,
+        primary key (id_lancamento)
+    )
+2026-02-24T20:06:18.932-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create table movimento_conta (
+        data_movimento date not null,
+        valor numeric(17,2) not null,
+        conta_id bigint not null,
+        id_movimento_conta bigint not null,
+        referencia_id bigint,
+        referencia_tipo varchar(50),
+        historico varchar(255),
+        primary key (id_movimento_conta)
+    )
+2026-02-24T20:06:18.932-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create table pagamento (
+        data_pagamento date not null,
+        valor_pago numeric(17,2) not null,
+        conta_origem_id bigint not null,
+        id_pagamento bigint not null,
+        lancamento_id bigint not null,
+        observacao varchar(255),
+        primary key (id_pagamento)
+    )
+2026-02-24T20:06:18.933-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create table recebimento (
+        data_recebimento date not null,
+        valor_recebido numeric(17,2) not null,
+        conta_destino_id bigint not null,
+        id_recebimento bigint not null,
+        lancamento_id bigint not null,
+        observacao varchar(255),
+        primary key (id_recebimento)
+    )
+2026-02-24T20:06:18.933-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create table transferencia (
+        data date not null,
+        valor numeric(17,2) not null,
+        conta_destino_id bigint not null,
+        conta_origem_id bigint not null,
+        id_transferencia bigint not null,
+        usuario_id bigint not null,
+        observacao varchar(255),
+        primary key (id_transferencia)
+    )
+2026-02-24T20:06:18.933-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    create table usuario (
+        criado_em date not null,
+        id_usuario bigint not null,
+        email varchar(20) not null unique,
+        nome varchar(65) not null,
+        primary key (id_usuario)
+    )
+2026-02-24T20:06:18.934-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists cartao_credito 
+       add constraint FKemgwy3gr8llw8cov0xefdsrfp 
+       foreign key (usuario_id) 
+       references usuario
+2026-02-24T20:06:18.941-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists centro_custo 
+       add constraint FK1u7xgds4gciw9k9t94hi91y47 
+       foreign key (usuario_id) 
+       references usuario
+2026-02-24T20:06:18.942-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists conta_bancaria 
+       add constraint FKf3gtq87s7m9umkowsud60kh0f 
+       foreign key (usuario_id) 
+       references usuario
+2026-02-24T20:06:18.942-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists entidade 
+       add constraint FKibyjdok9phiw764j7sb1gi2aw 
+       foreign key (usuario_id) 
+       references usuario
+2026-02-24T20:06:18.943-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists fatura_cartao 
+       add constraint FK1505ed7s4ol2f4941pcponjto 
+       foreign key (cartao_id) 
+       references cartao_credito
+2026-02-24T20:06:18.943-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists lancamento 
+       add constraint FKby9ddo52tb7gm1t4rsinsed8c 
+       foreign key (cartao_id) 
+       references cartao_credito
+2026-02-24T20:06:18.944-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists lancamento 
+       add constraint FKh8p2ujysi5dj401nlolvucup1 
+       foreign key (centro_custo_id) 
+       references centro_custo
+2026-02-24T20:06:18.944-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists lancamento 
+       add constraint FKj0kauc0adhu77gi2ceqik94kt 
+       foreign key (conta_id) 
+       references conta_bancaria
+2026-02-24T20:06:18.945-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists lancamento 
+       add constraint FK7eu3wdxe39ar329vqh47x3rcl 
+       foreign key (entidade_id) 
+       references entidade
+2026-02-24T20:06:18.945-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists lancamento 
+       add constraint FKpq8mu65bmp2hw9wl4kdahxajq 
+       foreign key (usuario_id) 
+       references usuario
+2026-02-24T20:06:18.946-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists movimento_conta 
+       add constraint FK76g9i9847e65n726c1s5w06rh 
+       foreign key (conta_id) 
+       references conta_bancaria
+2026-02-24T20:06:18.946-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists pagamento 
+       add constraint FK83f1jpxbpy0e5yhevfldpjr8o 
+       foreign key (conta_origem_id) 
+       references conta_bancaria
+2026-02-24T20:06:18.947-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists pagamento 
+       add constraint FKew1o9wc9kkhvtu9usvdm108cd 
+       foreign key (lancamento_id) 
+       references lancamento
+2026-02-24T20:06:18.947-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists recebimento 
+       add constraint FKeojkbjjrvxqxstc18swyc34k6 
+       foreign key (conta_destino_id) 
+       references conta_bancaria
+2026-02-24T20:06:18.948-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists recebimento 
+       add constraint FK8nknei26jdpchllx60q2lj22h 
+       foreign key (lancamento_id) 
+       references lancamento
+2026-02-24T20:06:18.948-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists transferencia 
+       add constraint FKawk75nt0wp2m4eamhxwrfuvmp 
+       foreign key (conta_destino_id) 
+       references conta_bancaria
+2026-02-24T20:06:18.949-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists transferencia 
+       add constraint FK2hmvnifd6rsllpepeglidridg 
+       foreign key (conta_origem_id) 
+       references conta_bancaria
+2026-02-24T20:06:18.949-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists transferencia 
+       add constraint FK9mou31dmvfuskscn570gqkag 
+       foreign key (usuario_id) 
+       references usuario
+2026-02-24T20:06:18.951-03:00 TRACE 18769 --- [monefyteste] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@2f41cc13] for TypeConfiguration
+2026-02-24T20:06:18.951-03:00  INFO 18769 --- [monefyteste] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-24T20:06:19.090-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_usuario
+2026-02-24T20:06:19.101-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_conta_bancaria
+2026-02-24T20:06:19.101-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_conta_bancaria
+2026-02-24T20:06:19.102-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_cartao_credito
+2026-02-24T20:06:19.102-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_fatura_cartao
+2026-02-24T20:06:19.102-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_entidade
+2026-02-24T20:06:19.102-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_entidade
+2026-02-24T20:06:19.103-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_entidade
+2026-02-24T20:06:19.103-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_centro_custo
+2026-02-24T20:06:19.103-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_centro_custo
+2026-02-24T20:06:19.103-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_lancamento
+2026-02-24T20:06:19.104-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_lancamento
+2026-02-24T20:06:19.104-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_lancamento
+2026-02-24T20:06:19.104-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_pagamento
+2026-02-24T20:06:19.104-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_recebimento
+2026-02-24T20:06:19.105-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_transferencia
+2026-02-24T20:06:19.105-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_movimento_conta
+2026-02-24T20:06:19.105-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_movimento_conta
+2026-02-24T20:06:19.105-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_movimento_conta
+2026-02-24T20:06:19.106-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_movimento_conta
+2026-02-24T20:06:19.112-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        usuario
+        (criado_em, email, nome, id_usuario) 
+    values
+        (?, ?, ?, ?)
+2026-02-24T20:06:19.114-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        conta_bancaria
+        (agencia, apelido, ativa, data_saldo_inicial, instituicao, numero, saldo_inicial, usuario_id, id_conta_bancaria) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-02-24T20:06:19.115-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        conta_bancaria
+        (agencia, apelido, ativa, data_saldo_inicial, instituicao, numero, saldo_inicial, usuario_id, id_conta_bancaria) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-02-24T20:06:19.115-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        cartao_credito
+        (apelido, ativo, bandeira, emissor, fechamento_fatura_dia, status_fatura, usuario_id, vencimento_fatura_dia, id_cartao_credito) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-02-24T20:06:19.115-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        fatura_cartao
+        (cartao_id, competencia, data_fechamento, data_vencimento, status, valor_total, id_fatura_cartao) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-02-24T20:06:19.115-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        entidade
+        (documento, nome, tipo, usuario_id, id_entidade) 
+    values
+        (?, ?, ?, ?, ?)
+2026-02-24T20:06:19.116-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        entidade
+        (documento, nome, tipo, usuario_id, id_entidade) 
+    values
+        (?, ?, ?, ?, ?)
+2026-02-24T20:06:19.116-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        entidade
+        (documento, nome, tipo, usuario_id, id_entidade) 
+    values
+        (?, ?, ?, ?, ?)
+2026-02-24T20:06:19.116-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        centro_custo
+        (ativo, codigo, nome, usuario_id, id_centro_custo) 
+    values
+        (?, ?, ?, ?, ?)
+2026-02-24T20:06:19.116-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        centro_custo
+        (ativo, codigo, nome, usuario_id, id_centro_custo) 
+    values
+        (?, ?, ?, ?, ?)
+2026-02-24T20:06:19.117-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        lancamento
+        (cartao_id, centro_custo_id, conta_id, data_competencia, data_vencimento, descricao, entidade_id, meio_pagamento, status, tipo, usuario_id, valor, valor_baixado, id_lancamento) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-02-24T20:06:19.117-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        lancamento
+        (cartao_id, centro_custo_id, conta_id, data_competencia, data_vencimento, descricao, entidade_id, meio_pagamento, status, tipo, usuario_id, valor, valor_baixado, id_lancamento) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-02-24T20:06:19.117-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        lancamento
+        (cartao_id, centro_custo_id, conta_id, data_competencia, data_vencimento, descricao, entidade_id, meio_pagamento, status, tipo, usuario_id, valor, valor_baixado, id_lancamento) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-02-24T20:06:19.118-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        pagamento
+        (conta_origem_id, data_pagamento, lancamento_id, observacao, valor_pago, id_pagamento) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2026-02-24T20:06:19.118-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        recebimento
+        (conta_destino_id, data_recebimento, lancamento_id, observacao, valor_recebido, id_recebimento) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2026-02-24T20:06:19.118-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        transferencia
+        (conta_destino_id, conta_origem_id, data, observacao, usuario_id, valor, id_transferencia) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-02-24T20:06:19.119-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        movimento_conta
+        (conta_id, data_movimento, historico, referencia_id, referencia_tipo, valor, id_movimento_conta) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-02-24T20:06:19.119-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        movimento_conta
+        (conta_id, data_movimento, historico, referencia_id, referencia_tipo, valor, id_movimento_conta) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-02-24T20:06:19.119-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        movimento_conta
+        (conta_id, data_movimento, historico, referencia_id, referencia_tipo, valor, id_movimento_conta) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-02-24T20:06:19.119-03:00 DEBUG 18769 --- [monefyteste] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        movimento_conta
+        (conta_id, data_movimento, historico, referencia_id, referencia_tipo, valor, id_movimento_conta) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-02-24T20:06:19.182-03:00  WARN 18769 --- [monefyteste] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-24T20:06:19.275-03:00  INFO 18769 --- [monefyteste] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cursodb'
+2026-02-24T20:06:19.292-03:00  INFO 18769 --- [monefyteste] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-24T20:06:19.304-03:00  INFO 18769 --- [monefyteste] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-02-24T20:06:19.308-03:00  INFO 18769 --- [monefyteste] [restartedMain] com.monefy.MonefytesteApplication        : Started MonefytesteApplication in 1.637 seconds (process running for 1.805)
+2026-02-24T20:36:13.348-03:00  INFO 18769 --- [monefyteste] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-24T20:36:13.354-03:00  INFO 18769 --- [monefyteste] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-02-24T20:36:13.358-03:00  INFO 18769 --- [monefyteste] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-24T20:36:13.358-03:00 DEBUG 18769 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists cartao_credito cascade 
+2026-02-24T20:36:13.359-03:00 DEBUG 18769 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists centro_custo cascade 
+2026-02-24T20:36:13.360-03:00 DEBUG 18769 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists conta_bancaria cascade 
+2026-02-24T20:36:13.360-03:00 DEBUG 18769 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists entidade cascade 
+2026-02-24T20:36:13.360-03:00 DEBUG 18769 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists fatura_cartao cascade 
+2026-02-24T20:36:13.360-03:00 DEBUG 18769 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists lancamento cascade 
+2026-02-24T20:36:13.361-03:00 DEBUG 18769 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists movimento_conta cascade 
+2026-02-24T20:36:13.361-03:00 DEBUG 18769 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists pagamento cascade 
+2026-02-24T20:36:13.361-03:00 DEBUG 18769 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists recebimento cascade 
+2026-02-24T20:36:13.361-03:00 DEBUG 18769 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists transferencia cascade 
+2026-02-24T20:36:13.361-03:00 DEBUG 18769 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists usuario cascade 
+2026-02-24T20:36:13.362-03:00 DEBUG 18769 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_cartao_credito
+2026-02-24T20:36:13.362-03:00 DEBUG 18769 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_centro_custo
+2026-02-24T20:36:13.362-03:00 DEBUG 18769 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_conta_bancaria
+2026-02-24T20:36:13.362-03:00 DEBUG 18769 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_entidade
+2026-02-24T20:36:13.362-03:00 DEBUG 18769 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_fatura_cartao
+2026-02-24T20:36:13.362-03:00 DEBUG 18769 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_lancamento
+2026-02-24T20:36:13.362-03:00 DEBUG 18769 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_movimento_conta
+2026-02-24T20:36:13.362-03:00 DEBUG 18769 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_pagamento
+2026-02-24T20:36:13.362-03:00 DEBUG 18769 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_recebimento
+2026-02-24T20:36:13.362-03:00 DEBUG 18769 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_transferencia
+2026-02-24T20:36:13.362-03:00 DEBUG 18769 --- [monefyteste] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_usuario
+2026-02-24T20:36:13.363-03:00 TRACE 18769 --- [monefyteste] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@2f41cc13] for TypeConfiguration
+2026-02-24T20:36:13.363-03:00 DEBUG 18769 --- [monefyteste] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@305ce754] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@2f41cc13]
+2026-02-24T20:36:13.366-03:00  WARN 18769 --- [monefyteste] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2026-02-24T20:36:13.366-03:00  INFO 18769 --- [monefyteste] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-24T20:36:13.367-03:00  INFO 18769 --- [monefyteste] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
