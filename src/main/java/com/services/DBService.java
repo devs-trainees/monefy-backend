@@ -48,6 +48,9 @@ public class DBService {
     @Autowired
     private TransferenciaRepository transferenciaRepo;
 
+    @Autowired
+    private InvestimentoRepository investimentoRepo;
+
     @Transactional
     public void initDB() {
 
@@ -58,6 +61,7 @@ public class DBService {
                 "Usuário Demo",
                 "demo@financas.com",
                 hoje,
+                new ArrayList<>(),
                 new ArrayList<>(),
                 new ArrayList<>(),
                 new ArrayList<>(),
@@ -301,5 +305,37 @@ public class DBService {
         );
 
         movimentoRepo.saveAll(List.of(movimento01, movimento02, movimento03, movimento04));
+
+        Investimento investimento01 = new Investimento(
+                null,
+                "RENDA_FIXA",
+                "CDB Nubank 110% CDI",
+                new BigDecimal("5000.000"),
+                new BigDecimal("0.012"),
+                hoje.minusMonths(2),
+                usuario01
+        );
+
+        Investimento investimento02 = new Investimento(
+                null,
+                "RENDA_VARIAVEL",
+                "PETR4",
+                new BigDecimal("3000.000"),
+                new BigDecimal("0.085"),
+                hoje.minusMonths(4),
+                usuario01
+        );
+
+        Investimento investimento03 = new Investimento(
+                null,
+                "FUNDO_IMOBILIARIO",
+                "MXRF11",
+                new BigDecimal("2000.000"),
+                new BigDecimal("0.015"),
+                hoje.minusMonths(1),
+                usuario01
+        );
+
+        investimentoRepo.saveAll(List.of(investimento01, investimento02, investimento03));
     }
 }

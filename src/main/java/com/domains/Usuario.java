@@ -59,10 +59,14 @@ public class Usuario {
     @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL, orphanRemoval = false)
     private List<Transferencia> transferencias = new ArrayList<>();
 
+    @JsonManagedReference
+    @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL, orphanRemoval = false)
+    private List<Investimento> investimentos = new ArrayList<>();
+
     public Usuario() {
     }
 
-    public Usuario(Long idUsuario, String nome, String email, LocalDate criadoEm, List<ContaBancaria> contas, List<CartaoCredito> cartoes, List<Entidade> entidades, List<CentroCusto> centros, List<Lancamento> lancamentos, List<Transferencia> transferencias) {
+    public Usuario(Long idUsuario, String nome, String email, LocalDate criadoEm, List<ContaBancaria> contas, List<CartaoCredito> cartoes, List<Entidade> entidades, List<CentroCusto> centros, List<Lancamento> lancamentos, List<Transferencia> transferencias, List<Investimento> investimentos) {
         this.idUsuario = idUsuario;
         this.nome = nome;
         this.email = email;
@@ -73,6 +77,7 @@ public class Usuario {
         this.centros = centros;
         this.lancamentos = lancamentos;
         this.transferencias = transferencias;
+        this.investimentos = investimentos;
     }
 
     public Long getIdUsuario() {
@@ -153,5 +158,13 @@ public class Usuario {
 
     public void setTransferencias(List<Transferencia> transferencias) {
         this.transferencias = transferencias;
+    }
+
+    public List<Investimento> getInvestimentos() {
+        return investimentos;
+    }
+
+    public void setInvestimentos(List<Investimento> investimentos) {
+        this.investimentos = investimentos;
     }
 }
